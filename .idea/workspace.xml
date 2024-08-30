@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="928b4ae3-33fd-4d26-899f-619442c46b7d" name="Changes" comment="new project">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Icon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/FindLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/pikachu.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pikachu/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pikachu/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pikachu/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/FindLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/FindLink.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +100,7 @@
       <workItem from="1724887355906" duration="14424000" />
       <workItem from="1724912752334" duration="10294000" />
       <workItem from="1724934291861" duration="10972000" />
-      <workItem from="1724975603478" duration="5034000" />
+      <workItem from="1724975603478" duration="9052000" />
     </task>
     <task id="LOCAL-00001" summary="new project">
       <option name="closed" value="true" />
@@ -124,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724829483876</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new project">
+      <option name="closed" value="true" />
+      <created>1724980970963</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724980970963</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

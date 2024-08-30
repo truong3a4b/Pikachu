@@ -13,6 +13,8 @@ public class FindLink {
     private int newRow;
     private int newColumn;
 
+
+
     public FindLink(List<Integer> arr, int row, int column){
 //        map = new HashMap<>();
         newRow = row + 2;
@@ -130,10 +132,14 @@ public class FindLink {
                     way.clear();
                     break;
                 }
+                if(i == 0){
+                    way.clear();
+                    break;
+                }
             }
             if(way.size() > 0) return way;
 
-            for(int i = p1.getY()+1; i >= newRow; i++){
+            for(int i = p1.getY()+1; i < newRow; i++){
                 if(adjustedTable[i][p1.getX()] == 0 && adjustedTable[i][p2.getX()] == 0){
                     way.add(new Point(p1.getX(), i));
                     if(checkLineX(new Point(p1.getX(), i),new Point(p2.getX(),i))){
@@ -146,6 +152,10 @@ public class FindLink {
                         break;
                     }
                 }else{
+                    way.clear();
+                    break;
+                }
+                if(i == newRow-1){
                     way.clear();
                     break;
                 }
@@ -173,7 +183,7 @@ public class FindLink {
             }
             if(way.size() > 0) return way;
 
-            for(int i = p1.getX()+1; i<=newColumn; i++){
+            for(int i = p1.getX()+1; i<newColumn; i++){
                 if(adjustedTable[p1.getY()][i] == 0 && adjustedTable[p2.getY()][i] == 0){
                     way.add(new Point(i, p1.getY()));
                     if(checkLineY(new Point(i, p1.getY()), new Point(i,p2.getY()))){
@@ -186,6 +196,10 @@ public class FindLink {
                         break;
                     }
                 }else{
+                    way.clear();
+                    break;
+                }
+                if(i == newColumn-1){
                     way.clear();
                     break;
                 }
@@ -205,6 +219,10 @@ public class FindLink {
                         break;
                     }
                 }else{
+                    way.clear();
+                    break;
+                }
+                if(i == 0){
                     way.clear();
                     break;
                 }
@@ -248,12 +266,19 @@ public class FindLink {
                     way.clear();
                     break;
                 }
-
+                if(i == 0){
+                    way.clear();
+                    break;
+                }
             }
 
-            if (way.size() > 0) return way;
+            if (way.size() > 0) {
+                System.out.println("th1");
+                return way;
+            }
 
-            for (int i = p1.getY()+1; i >= newRow; i++) {
+
+            for (int i = p1.getY()+1; i < newRow; i++) {
                 if (adjustedTable[i][p1.getX()] == 0) {
                     way.add(new Point(p1.getX(), i));
                     if (i < p2.getY()) {
@@ -288,8 +313,15 @@ public class FindLink {
                     way.clear();
                     break;
                 }
+                if(i == newRow-1){
+                    way.clear();
+                    break;
+                }
             }
-            if (way.size() > 0) return way;
+            if (way.size() > 0) {
+                System.out.println("th2");
+                return way;
+            }
 
             for(int i = p1.getY() - 1; i >=0; i--){
                 if(adjustedTable[i][p1.getX()] == 0){
@@ -307,12 +339,20 @@ public class FindLink {
                     way.clear();
                     break;
                 }
+                if(i == 0){
+                    way.clear();
+                    break;
+                }
             }
 
-            if(way.size() > 0) return way;
+            if (way.size() > 0) {
+                printWay(way);
+                System.out.println("th3");
+                return way;
+            }
 
 
-            for(int i = p1.getX() + 1; i <= newColumn; i++){
+            for(int i = p1.getX() + 1; i < newColumn; i++){
                 if(adjustedTable[p1.getY()][i] == 0){
                     way.add(new Point(i, p1.getY()));
                     if(checkLineY(new Point(i, p1.getY()), new Point(i, p2.getY())) && checkLineX(new Point(p2.getX()+1, p2.getY()), new Point(i, p2.getY()))){
@@ -328,14 +368,21 @@ public class FindLink {
                     way.clear();
                     break;
                 }
+                if(i == newColumn-1){
+                    way.clear();
+                    break;
+                }
             }
 
-            if(way.size() > 0) return way;
+            if (way.size() > 0) {
+                System.out.println("th4");
+                return way;
+            }
         }
 
         if(p1.getX() < p2.getX()){
             System.out.println("x1 < x2");
-            for (int i = p1.getX() + 1; i <= newColumn; i++) {
+            for (int i = p1.getX() + 1; i < newColumn; i++) {
                 if (adjustedTable[p1.getY()][i] == 0) {
                     way.add(new Point(i, p1.getY()));
                     if (i < p2.getX()) {
@@ -370,12 +417,15 @@ public class FindLink {
                     way.clear();
                     break;
                 }
-
+                if(i == newColumn-1){
+                    way.clear();
+                    break;
+                }
             }
 
             if (way.size() > 0) return way;
 
-            for (int i = p1.getY()+1; i >= newRow; i++) {
+            for (int i = p1.getY()+1; i < newRow; i++) {
                 if (adjustedTable[i][p1.getX()] == 0) {
                     way.add(new Point(p1.getX(), i));
                     if (i < p2.getY()) {
@@ -410,6 +460,10 @@ public class FindLink {
                     way.clear();
                     break;
                 }
+                if(i == newRow-1){
+                    way.clear();
+                    break;
+                }
             }
             if (way.size() > 0) return way;
 
@@ -426,6 +480,10 @@ public class FindLink {
                         break;
                     }
                 }else {
+                    way.clear();
+                    break;
+                }
+                if(i == 0){
                     way.clear();
                     break;
                 }
@@ -450,6 +508,10 @@ public class FindLink {
                     way.clear();
                     break;
                 }
+                if(i == 0){
+                    way.clear();
+                    break;
+                }
             }
 
             if(way.size() > 0) return way;
@@ -458,8 +520,8 @@ public class FindLink {
     }
 
     private boolean checkLineX(Point pnt1, Point pnt2){
-        Point p1 = Point.max(pnt1,pnt2);
-        Point p2 = Point.min(pnt1,pnt2);
+        Point p1 = Point.min(pnt1,pnt2);
+        Point p2 = Point.max(pnt1,pnt2);
 
         if(p1.getY() == p2.getY()){
             for(int i = p1.getX(); i <= p2.getX(); i++){
@@ -470,8 +532,8 @@ public class FindLink {
         return false;
     }
     private boolean checkLineY(Point pnt1, Point pnt2){
-        Point p1 = Point.max(pnt1,pnt2);
-        Point p2 = Point.min(pnt1,pnt2);
+        Point p1 = Point.min(pnt1,pnt2);
+        Point p2 = Point.max(pnt1,pnt2);
 
         if(p1.getX() == p2.getX()){
             for(int i = p1.getY(); i <= p2.getY(); i++){
@@ -480,6 +542,13 @@ public class FindLink {
             return true;
         }
         return false;
+    }
+    private void printWay(List<Point> way){
+        for(Point p : way){
+            p.printPoint();
+            System.out.print(" ");
+        }
+        System.out.println();
     }
 }
 

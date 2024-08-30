@@ -62,7 +62,7 @@ public class MainController implements Initializable {
                             btn.setStyle("-fx-border-color: black; -fx-border-width: 2;");
                             stack.clear();
                         }else if(way.size() > 0){
-                            System.out.println("OK");
+                            System.out.println("link exist");
                             btn.setStyle("-fx-border-color: blue; -fx-border-width: 5;");
                             stack.clear();
                             btn1.setVisible(false);
