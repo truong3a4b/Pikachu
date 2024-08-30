@@ -1,0 +1,7 @@
+.button {
+    -fx-border-color: black;  /* Màu viền ban đầu */
+    -fx-border-width: 2;      /* Độ dày của viền */
+/*    -fx-focus-color: transparent;  !* Tắt màu viền sáng khi focus *!*/
+/*    -fx-faint-focus-color: transparent;  !* Tắt màu viền sáng mờ khi focus *!*/
+}
+
