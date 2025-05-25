@@ -112,7 +112,11 @@ public class FindLink {
                     break;
                 }
             }
-            if(way.size() > 0) return way;
+            if(!way.isEmpty()) {
+                way.addFirst(p1);
+                way.add(p2);
+                return way;
+            }
 
 
             for(int i = p1.getY()-1; i >=0; i--){
@@ -137,7 +141,11 @@ public class FindLink {
                     break;
                 }
             }
-            if(way.size() > 0) return way;
+            if(!way.isEmpty()){
+                way.addFirst(p1);
+                way.add(p2);
+                return way;
+            }
 
             for(int i = p1.getY()+1; i < newRow; i++){
                 if(adjustedTable[i][p1.getX()] == 0 && adjustedTable[i][p2.getX()] == 0){
@@ -160,7 +168,11 @@ public class FindLink {
                     break;
                 }
             }
-            if(way.size() > 0) return way;
+            if(!way.isEmpty()){
+                way.addFirst(p1);
+                way.add(p2);
+                return way;
+            }
         }
 
 
@@ -181,7 +193,11 @@ public class FindLink {
                     break;
                 }
             }
-            if(way.size() > 0) return way;
+            if(!way.isEmpty()){
+                way.addFirst(p1);
+                way.add(p2);
+                return way;
+            }
 
             for(int i = p1.getX()+1; i<newColumn; i++){
                 if(adjustedTable[p1.getY()][i] == 0 && adjustedTable[p2.getY()][i] == 0){
@@ -204,7 +220,11 @@ public class FindLink {
                     break;
                 }
             }
-            if(way.size() > 0) return way;
+            if(!way.isEmpty()){
+                way.addFirst(p1);
+                way.add(p2);
+                return way;
+            }
 
             for(int i = p1.getX()-1; i>=0; i--){
                 if(adjustedTable[p1.getY()][i] == 0 && adjustedTable[p2.getY()][i] == 0){
@@ -272,7 +292,9 @@ public class FindLink {
                 }
             }
 
-            if (way.size() > 0) {
+            if (!way.isEmpty()) {
+                way.addFirst(p1);
+                way.add(p2);
                 System.out.println("th1");
                 return way;
             }
@@ -318,7 +340,9 @@ public class FindLink {
                     break;
                 }
             }
-            if (way.size() > 0) {
+            if (!way.isEmpty()) {
+                way.addFirst(p1);
+                way.add(p2);
                 System.out.println("th2");
                 return way;
             }
@@ -345,8 +369,10 @@ public class FindLink {
                 }
             }
 
-            if (way.size() > 0) {
+            if (!way.isEmpty()) {
                 printWay(way);
+                way.addFirst(p1);
+                way.add(p2);
                 System.out.println("th3");
                 return way;
             }
@@ -374,7 +400,9 @@ public class FindLink {
                 }
             }
 
-            if (way.size() > 0) {
+            if (!way.isEmpty()) {
+                way.addFirst(p1);
+                way.add(p2);
                 System.out.println("th4");
                 return way;
             }
@@ -423,7 +451,11 @@ public class FindLink {
                 }
             }
 
-            if (way.size() > 0) return way;
+            if (!way.isEmpty()){
+                way.addFirst(p1);
+                way.add(p2);
+                return way;
+            }
 
             for (int i = p1.getY()+1; i < newRow; i++) {
                 if (adjustedTable[i][p1.getX()] == 0) {
@@ -465,7 +497,11 @@ public class FindLink {
                     break;
                 }
             }
-            if (way.size() > 0) return way;
+            if (!way.isEmpty()){
+                way.addFirst(p1);
+                way.add(p2);
+                return way;
+            }
 
             for(int i = p1.getY() - 1; i >=0; i--){
                 if(adjustedTable[i][p1.getX()] == 0){
@@ -489,7 +525,11 @@ public class FindLink {
                 }
             }
 
-            if(way.size() > 0) return way;
+            if(!way.isEmpty()){
+                way.addFirst(p1);
+                way.add(p2);
+                return way;
+            }
 
 
             for(int i = p1.getX() - 1; i >= 0; i--){
@@ -514,8 +554,13 @@ public class FindLink {
                 }
             }
 
-            if(way.size() > 0) return way;
+            if(!way.isEmpty()){
+                way.addFirst(p1);
+                way.add(p2);
+                return way;
+            }
         }
+        
         return way;
     }
 

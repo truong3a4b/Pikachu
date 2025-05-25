@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="928b4ae3-33fd-4d26-899f-619442c46b7d" name="Changes" comment="new project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/FindLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/FindLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/pikachu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/pikachu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +30,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -36,27 +49,52 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Maven.Pikachu [clean].executor": "Run",
+    "Maven.Pikachu [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Work2/Pikachu",
+    "last_opened_file_path": "D:/Learnnig/Work2/Snake",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "http.proxy",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work2\Pikachu\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.App" />
       <module name="Pikachu" />
       <option name="VM_PARAMETERS" value="--module-path D:\Work\javaLib\openjfx-21.0.2_windows-x64_bin-sdk\javafx-sdk-21.0.2\lib --add-modules=javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="Pikachu" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -83,10 +121,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.demo" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -108,6 +154,18 @@
       <workItem from="1726801385952" duration="6000" />
       <workItem from="1726882011903" duration="14000" />
       <workItem from="1731813193762" duration="1567000" />
+      <workItem from="1731815132102" duration="154000" />
+      <workItem from="1731815385623" duration="2333000" />
+      <workItem from="1731825039101" duration="114000" />
+      <workItem from="1731825875828" duration="226000" />
+      <workItem from="1731826720242" duration="41000" />
+      <workItem from="1731827394134" duration="250000" />
+      <workItem from="1732289474904" duration="156000" />
+      <workItem from="1732289669838" duration="39000" />
+      <workItem from="1732290169875" duration="923000" />
+      <workItem from="1747821257487" duration="17049000" />
+      <workItem from="1747973145735" duration="261000" />
+      <workItem from="1748092521981" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary="new project">
       <option name="closed" value="true" />
@@ -125,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724980970963</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new project">
+      <option name="closed" value="true" />
+      <created>1731815147781</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731815147781</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +208,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/Test.java</url>
           <line>43</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/MainController.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
